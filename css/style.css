@@ -1,0 +1,55 @@
+body {
+	padding-top: 5rem;
+	/* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+/* Landing page style */
+.page{
+    margin-top: 50px;
+}
+.jumbotron{background-color:transparent;text-align:center;padding:30px 60px}
+.jumbotron h1{font-weight:bold}
+@media (max-width:768px){.jumbotron h1{font-size:49px}}
+@media (min-width:768px){.jumbotron h1{font-size:65px}}
+.panel h3{margin-top:0}
+
+/* detail page */
+#image_div img {
+	height: 200px;
+	width: 200px;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+.btn {
+	margin: 5px;
+}
+
+/* footer */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.footer {
+	position: absolute;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	line-height: 60px; /* Vertically center the text there */
+	background-color: #212529;
+	color: #d3d3d3;
+}
+
+.links {
+    list-style: none;
+    margin: 20px 0;
+    display: inline;
+}
+
+.links li {
+   display: inline; 
+}
+

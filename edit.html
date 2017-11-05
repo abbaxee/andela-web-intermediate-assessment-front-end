@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Edit Student-Andela Assessment</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+        
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Andela Assessment</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="student-list.html">Student List</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="add.html">Add Student</a>
+                </li>
+            </ul>    
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        <h1>Edit Student</h1>
+
+        <form id="edit_form" enctype='multipart/form-data'>
+            <div class="form-group">
+                <label>Full Name</label>
+                <input name="name" type="text" class="form-control" placeholder="Enter name" id="name_input" required="true">
+            </div>
+            <div class="form-group">
+                <label>Email address</label>
+                <input name="email" type="email" class="form-control" placeholder="Enter email" id="email_input" required="true">
+            </div>
+            <div class="form-group">
+                <label>Mobile Number</label>
+                <input name="mobile" type="text" class="form-control" placeholder="Enter mobile number" id="mobile_input">
+            </div>
+            <div class="form-group">
+                <label>Date of Birth</label>
+                <input name="dob" type="date" class="form-control" placeholder="Enter name" id="dob_input">
+            </div>
+            <div class="form-group">
+                <label>School Name</label>
+                <input name="school" type="text" class="form-control" placeholder="Enter school name" id="school_input" required="true" >
+            </div>
+            <div class="form-group">
+                <label>Department</label>
+                <input name="department" type="text" class="form-control" placeholder="Enter department name" id="dept_input" required="true" >
+            </div>
+            <div class="form-group">
+                <label>Course of Study</label>
+                <input name="course" type="text" class="form-control" placeholder="Enter course" id="course_input" required="true">
+            </div>
+            <div class="form-group">
+                <label>Nationality</label>
+                <input name="nationality" type="text" class="form-control" placeholder="Enter nationality" id="nation_input">
+            </div>
+            <div class="form-group">
+                <label>State</label>
+                <input name="state" type="text" class="form-control" placeholder="Enter state" id="state_input">
+            </div>
+            <div class="form-group">
+                <label>Image</label>
+                <input name="profileimage" type="file" class="form-control" id="image_input">
+            </div>
+
+            <input type="submit" class="btn btn-primary"></input>
+        </form>
+    </main><!-- /.container -->
+    
+    <!-- FOOTER -->
+    <footer class="footer"> 
+        <div class="container">
+            <span class="copyright pull-right">&#169; 2017 Abba_xee</span>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                |
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/edit.js"></script>
+  </body>
+</html>
