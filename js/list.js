@@ -1,5 +1,5 @@
 // Fetch data from API using XMLHttpRequest.
-var requestURL = 'https://cors-anywhere.herokuapp.com/https://andela-backend-api.herokuapp.com/';
+var requestURL = 'https://andela-backend-api.herokuapp.com/';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);

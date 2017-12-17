@@ -1,6 +1,6 @@
 var id = sessionStorage.getItem('detail_id');
 
-var requestURL = 'https://cors-anywhere.herokuapp.com/https://andela-backend-api.herokuapp.com/student/show/'+id;
+var requestURL = 'https://andela-backend-api.herokuapp.com/student/show/'+id;
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
@@ -21,7 +21,9 @@ function populateStutentDetail(json) {
     document.getElementById('state').textContent        = json.state;
     document.getElementById('mobile').textContent       = json.mobile;
     document.getElementById('nation').textContent       = json.nationality;
-    document.getElementById('dob').textContent          = json.dob;
+    
+    var dateForm = moment(json.dob).format('DD MMMM, YYYY');
+    document.getElementById('dob').textContent          = dateForm;
 
     var imageDiv = document.getElementById('image_div');
     var image = document.createElement('img');
@@ -55,7 +57,7 @@ function populateStutentDetail(json) {
 
 // Send delete request
 function deleteStudent(id) {
-    var requestURL = 'https://cors-anywhere.herokuapp.com/https://andela-backend-api.herokuapp.com/student/delete/'+id;
+    var requestURL = 'https://andela-backend-api.herokuapp.com/student/delete/'+id;
     var request = new XMLHttpRequest();
     
     request.open('GET', requestURL);

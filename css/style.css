@@ -4,14 +4,20 @@ body {
     margin-bottom: 60px;
 }
 /* Landing page style */
-.page{
-    margin-top: 50px;
+
+.jumbotron{
+	background-color:transparent;
+	text-align:center;
+	padding:30px 60px
 }
-.jumbotron{background-color:transparent;text-align:center;padding:30px 60px}
-.jumbotron h1{font-weight:bold}
-@media (max-width:768px){.jumbotron h1{font-size:35px}}
-@media (min-width:768px){.jumbotron h1{font-size:65px}}
-.panel h3{margin-top:0}
+.jumbotron h1{
+	font-weight:bold;
+	font-size:65px;
+}
+
+.panel h3{
+	margin-top:0
+}
 
 /* detail page */
 #image_div img {
@@ -53,3 +59,32 @@ html {
    display: inline; 
 }
 
+@media screen and (max-width:549px){
+	.jumbotron h1{
+		font-size:30px
+	}
+	.btn {
+		display: block;
+	}
+	.jumbotron{
+		padding:0;
+	}
+}
+
+@media screen and (min-width:550px){
+	.jumbotron h1{
+		font-size:45px
+	}
+	.page{
+		padding-top: 50px;
+	}
+	.jumbotron{
+		padding:30px 40px;
+	}
+}
+
+@media screen and (min-width:850px){
+	.jumbotron h1{
+		font-size: 65px;
+	}
+}

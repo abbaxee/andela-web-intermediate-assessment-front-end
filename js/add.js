@@ -9,7 +9,7 @@ $(document).ready(function () {
 
         $.ajax({
             type        :  'POST',
-            url         :  "https://cors-anywhere.herokuapp.com/https://andela-backend-api.herokuapp.com/student/add", 
+            url         :  "https://andela-backend-api.herokuapp.com/student/add", 
             data        :   data ,
             contentType : false,
             processData : false,

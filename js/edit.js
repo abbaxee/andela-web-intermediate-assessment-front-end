@@ -2,7 +2,7 @@
 var id = sessionStorage.getItem('detail_id');
 
 //Request for student with above id and get his data
-var requestURL = 'https://cors-anywhere.herokuapp.com/https://andela-backend-api.herokuapp.com/student/show/'+id;
+var requestURL = 'https://andela-backend-api.herokuapp.com/student/show/'+id;
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
@@ -39,7 +39,7 @@ $(document).ready(function () {
 
         $.ajax({
             type        :  'POST',
-            url         :  "https://cors-anywhere.herokuapp.com/https://andela-backend-api.herokuapp.com/student/edit/"+id, 
+            url         :  "https://andela-backend-api.herokuapp.com/student/edit/"+id, 
             data        :   data ,
             contentType : false,
             processData : false,
